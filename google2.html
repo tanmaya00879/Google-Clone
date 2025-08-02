@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 8vw;
+      margin-bottom: 30px;
+    }
+
+    .search-box {
+      width: 90%;
+      max-width: 600px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 12vw;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <h1>
+    <span style="color: #4285F4;">G</span>
+    <span style="color: #DB4437;">o</span>
+    <span style="color: #F4B400;">o</span>
+    <span style="color: #4285F4;">g</span>
+    <span style="color: #0F9D58;">l</span>
+    <span style="color: #DB4437;">e</span>
+  </h1>
+
+  <!-- Search Form -->
+  <form action="https://www.google.com/search" method="GET" class="search-box">
+    <input type="text" name="q" placeholder="Search Google">
+    <div class="buttons">
+      <input type="submit" value="Google Search">
+      <input type="submit" name="btnI" value="I'm Feeling Lucky">
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    Google clone by Tanmaya
+  </footer>
+
+</body>
+</html>
